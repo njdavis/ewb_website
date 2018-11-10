@@ -1,0 +1,85 @@
+/*
+Theme Name: EWB Theme
+Theme URI: https://www.ewb.org.vt.edu
+Author: Noah Davis
+Description: Custom theme for EWB club website
+Version: 1.0
+Text Domain: ewb_website
+*/
+
+/* Color Pallet
+ * Dark Green: #387661
+ */
+
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Lato&subset=latin-ext://fonts.googleapis.com/css?family=Lato&subset=latin-ext') 
+	font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	color:white;
+	text-shadow: 6px 6px 6px #000000;
+	position:absolute;
+	margin-top:32.5vh;
+	margin-left: 8.96vw;	
+	font-family: Lato;
+	font-size: 36pt;
+	z-index: 6;
+}
+
+
+p {
+	display: grid;
+	color: black;
+	font-family: Lato;
+	font-size: 16pt;
+	margin: 0;
+	padding-left:10vw;
+	padding-right:10vw;
+	padding-top:1.5vh;
+}
+
+/*Homepage Grid */
+.grid-container {
+	display: grid;
+	grid-template-rows: 62.5vh 25.5fr;
+	background-color: white;
+	width: 100vw;
+	height: 78vh;
+	padding-left:0;
+	padding-top:0;
+}
+
+.grid-container > div {
+	background-color: white;
+	text-align: center;
+	padding:  0;
+	font-size: 30px;
+}
+
+.hero_image {
+	grid-columns: 1/-1;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.hero_image img {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    overflow: hidden;
+}
+
+
+
