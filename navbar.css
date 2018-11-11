@@ -68,16 +68,19 @@ li a:hover {
 	width: 8.5vh;
 	grid-row: 1/3;
 	object-fit: contain;
+	padding-left: 6vw;
 }
 
-.logo embed {
+.logo style-svg {
 	display: block;
 	object-fit: cover;
 	height: 100%;
 	padding-left: 6vw;
+	fill: black;
 }
 
-.logo embed:hover {
+/* Edits svg code for logo image on hover*/
+.logo:hover {
 	fill: #387661;
 }
 

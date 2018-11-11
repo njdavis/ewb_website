@@ -9,10 +9,13 @@
 	<div class='logo'>
 
 		<?php
+			#Uses SVG Support WP plugin to load svg inline
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
-			$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-			echo '<embed src="'. esc_url( $logo[0] ) .'">'
+			$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );	
+
+			echo'<img class="style-svg" src="'. esc_url( $logo[0] ) .'">'
 		?>
+
 	</div>
 	<div class='whiteBorder'></div>
 	<div class="navlist">	
